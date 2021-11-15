@@ -12,3 +12,14 @@ var AB = []; var NO = [];
 ab.forEach((item, i) => AB.push(item.toUpperCase()));
 no.forEach((item, i) => NO.push(item.toUpperCase()));
 n0to4 = ["0", "1", "2", "3", "4"]; n5to9 = ["5", "6", "7", "8", "9"];
+
+
+let tocode = "";
+rl.prompt();
+rl.on('line', (text) => {
+  tocode = text;
+  //console.log("Text to encrypt :", `\x1b[36m${tocode}\x1b[0m`);
+  let tcarr = tocode.split(""); let tcarrnew = "";
+  console.log("Text encrypted :", `\x1b[36m${tcarrnew}\x1b[0m`);
+  rl.close();
+});
